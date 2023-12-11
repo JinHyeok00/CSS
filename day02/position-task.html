@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position 실습</title>
+    <style>
+      #img-out {
+        position: relative;
+        width: 759px;
+        height: 393px;
+        background-image: url('news.png');
+        background-size: 100%;
+        background-position: center;
+        margin: 0 auto;
+      }
+
+      #img-in {
+        position: absolute;
+        top: 0;
+        right: 15%;
+        width: 220px;
+        height: 220px;
+        background-image: url('http://koreaitacademy.com/renewal2021/img/tch/teacher007.png');
+        background-size: 100%;
+        background-position: center;
+        margin: 0 auto;
+        z-index: 1;
+      }
+
+      #mosaic {
+        position: absolute;
+        top: 8%;
+        right: 27%;
+        width: 80px;
+        height: 30px;
+        background-color: black;
+        z-index: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="img-out">
+      <div id="img-in"></div>
+      <div id="mosaic"></div>
+    </div>
+  </body>
+</html>
